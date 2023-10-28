@@ -23,7 +23,7 @@ const productos = [
 ];
 
 
-for (let i = 1; i <= 50; i++) {
+for (let i = 1; i <= 500; i++) {
     const randomCapacidad = Math.floor(Math.random() * 10) + 1; // Capacidad aleatoria entre 1 y 10
     const randomDistancia = Math.floor(Math.random() * 20) + 1; // Distancia aleatoria entre 1 y 20
 
