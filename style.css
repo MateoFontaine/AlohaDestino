@@ -41,6 +41,11 @@ header a img{
     color: red;
     box-shadow: rgba(0, 0, 0, 0.15)2.6px 1.95px 1.95px;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 footer .nav{
     display: flex;
     justify-content: center;
@@ -51,8 +56,10 @@ footer .nav{
     background-color: rgb(175, 175, 175);
     padding: 1.5rem 0rem;
     border-top: 1px solid rgba(0, 0, 0, 0.233) ;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: rgba(0, 0, 0, 0.15)2.6px 1.95px 1.95px;
+    width: 90%;
+    margin-bottom: .3rem;
 }
 .nav i {
     font-size: 1.6rem;
