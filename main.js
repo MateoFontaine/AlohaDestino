@@ -85,6 +85,14 @@ function buscarPorCapacidad() {
 
 btnBuscar.addEventListener("click", buscarPorCapacidad);
 
+
 // Cargar todas las casas al cargar la página
 cargarProductos(productos);
 
+
+
+inputCapacidad.addEventListener("keypress", function(event) {
+    if (event.keyCode === 13) {
+        buscarPorCapacidad();
+    }
+});
