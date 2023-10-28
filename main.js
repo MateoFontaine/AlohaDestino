@@ -87,3 +87,4 @@ btnBuscar.addEventListener("click", buscarPorCapacidad);
 
 // Cargar todas las casas al cargar la página
 cargarProductos(productos);
+
