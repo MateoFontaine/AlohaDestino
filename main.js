@@ -4,37 +4,55 @@ const productos = [
         imagen: "assets/img/casa-1.jpg",
         direccion: "San martin 268",
         capacidad: "3",
-        distancia: "12"
+        distancia: "12",
+        informacion: "assets/casas-rent/casa-1.html"
     },
     {
         titulo: "Casa 1",
         imagen: "assets/img/casa-1.jpg",
         direccion: "San martin 268",
-        capacidad: "4",
-        distancia: "12"
+        capacidad: "3",
+        distancia: "12",
+        informacion: "assets/casas-rent/casa-1.html"
     },
     {
         titulo: "Casa 1",
         imagen: "assets/img/casa-1.jpg",
         direccion: "San martin 268",
-        capacidad: "4",
-        distancia: "12"
+        capacidad: "3",
+        distancia: "12",
+        informacion: "assets/casas-rent/casa-1.html"
     },
+    {
+        titulo: "Casa 1",
+        imagen: "assets/img/casa-1.jpg",
+        direccion: "San martin 268",
+        capacidad: "3",
+        distancia: "12",
+        informacion: "assets/casas-rent/casa-1.html"
+    },
+    {
+        titulo: "Casa 1",
+        imagen: "assets/img/casa-1.jpg",
+        direccion: "San martin 268",
+        capacidad: "3",
+        distancia: "12",
+        informacion: "assets/casas-rent/casa-1.html"
+    },
+
 ];
 
 
 for (let i = 1; i <= 500; i++) {
     const randomCapacidad = Math.floor(Math.random() * 10) + 1; // Capacidad aleatoria entre 1 y 10
-    const randomDistancia = Math.floor(Math.random() * 20) + 1; // Distancia aleatoria entre 1 y 20
-
+    const randomDistancia = Math.floor(Math.random() * 20) + 1; // Distancia aleatoria entre 1 y 2
     const producto = {
         titulo: `Casa ${i}`,
         imagen: `https://picsum.photos/800/600?random=${i}`, // URL de imagen aleatoria
         direccion: `Dirección ${i}`,
         capacidad: `${randomCapacidad}`,
         distancia: `${randomDistancia}`
-    };
-
+    }
     productos.push(producto);
 }
 
@@ -67,7 +85,7 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-distancia">${producto.distancia} KM</p>
             </div>
             <div class="arrow">
-                <a href="#"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="${producto.infromacion}"><i  class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
         `;
