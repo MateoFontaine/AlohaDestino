@@ -5,56 +5,9 @@ const productos = [
         direccion: "San martin 268",
         capacidad: "3",
         distancia: "12",
-        informacion: "assets/casas-rent/casa-1.html"
+        informacion: "assets/casas/casa-01.html"
     },
-    {
-        titulo: "Casa 1",
-        imagen: "assets/img/casa-1.jpg",
-        direccion: "San martin 268",
-        capacidad: "3",
-        distancia: "12",
-        informacion: "assets/casas-rent/casa-1.html"
-    },
-    {
-        titulo: "Casa 1",
-        imagen: "assets/img/casa-1.jpg",
-        direccion: "San martin 268",
-        capacidad: "3",
-        distancia: "12",
-        informacion: "assets/casas-rent/casa-1.html"
-    },
-    {
-        titulo: "Casa 1",
-        imagen: "assets/img/casa-1.jpg",
-        direccion: "San martin 268",
-        capacidad: "3",
-        distancia: "12",
-        informacion: "assets/casas-rent/casa-1.html"
-    },
-    {
-        titulo: "Casa 1",
-        imagen: "assets/img/casa-1.jpg",
-        direccion: "San martin 268",
-        capacidad: "3",
-        distancia: "12",
-        informacion: "assets/casas-rent/casa-1.html"
-    },
-
 ];
-
-
-for (let i = 1; i <= 500; i++) {
-    const randomCapacidad = Math.floor(Math.random() * 10) + 1; // Capacidad aleatoria entre 1 y 10
-    const randomDistancia = Math.floor(Math.random() * 20) + 1; // Distancia aleatoria entre 1 y 2
-    const producto = {
-        titulo: `Casa ${i}`,
-        imagen: `https://picsum.photos/800/600?random=${i}`, // URL de imagen aleatoria
-        direccion: `Dirección ${i}`,
-        capacidad: `${randomCapacidad}`,
-        distancia: `${randomDistancia}`
-    }
-    productos.push(producto);
-}
 
 
 
@@ -85,7 +38,7 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-distancia">${producto.distancia} KM</p>
             </div>
             <div class="arrow">
-                <a href="${producto.infromacion}"><i  class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="${producto.informacion}"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
         `;
@@ -113,4 +66,21 @@ inputCapacidad.addEventListener("keypress", function(event) {
     if (event.keyCode === 13) {
         buscarPorCapacidad();
     }
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Mostrar pantalla inicial
+    const pantallaInicial = document.getElementById("pantalla-inicial");
+    setTimeout(function() {
+        pantallaInicial.style.display = "none";
+
+        // Mostrar el índice
+        const navegador = document.getElementById("navegador");
+        navegador.style.display = "block"
+        const contenedorProductos = document.getElementById("contenedor-productos");
+        contenedorProductos.style.display = "block";
+    }, 3000); // Cambia el valor (en milisegundos) a la cantidad de tiempo que deseas mostrar la pantalla inicial
 });

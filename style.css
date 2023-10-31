@@ -46,7 +46,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
-footer .nav{
+footer .navegador{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ footer .nav{
     width: 95%;
     margin-bottom: .3rem;
 }
-.nav i {
+.navegador i {
     font-size: 1.6rem;
     margin: 0rem 2rem;
     color: rgb(255, 255, 255);
@@ -73,6 +73,7 @@ footer .nav{
 }
 .contenedor-productos{
     margin-bottom: 6rem;
+    display: flex;
 }
 .producto{
     display: flex;
@@ -127,3 +128,38 @@ footer .nav{
 }
 
 
+
+/* Pantalla-incial */
+
+#contenedor-productos {
+    display: none;
+}
+footer{
+    display: none;
+}
+.pantalla-inicial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; /* Cambia esto al color de fondo deseado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantalla-inicial img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Casas */
+
+.imagenes{
+    padding: 0rem 1.3rem;
+}
+.imagenes img{
+    border-radius: 10px;
+}
