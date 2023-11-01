@@ -82,5 +82,5 @@ document.addEventListener("DOMContentLoaded", function() {
         navegador.style.display = "block"
         const contenedorProductos = document.getElementById("contenedor-productos");
         contenedorProductos.style.display = "block";
-    }, 3000); // Cambia el valor (en milisegundos) a la cantidad de tiempo que deseas mostrar la pantalla inicial
+    }, 500); // Cambia el valor (en milisegundos) a la cantidad de tiempo que deseas mostrar la pantalla inicial
 });
