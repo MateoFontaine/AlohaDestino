@@ -75,6 +75,7 @@ footer .navegador{
     margin-bottom: 6rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .producto{
     display: flex;

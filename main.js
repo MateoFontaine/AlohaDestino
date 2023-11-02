@@ -10,6 +10,21 @@ const productos = [
 ];
 
 
+for (let i = 1; i <= 500; i++) {
+    const randomCapacidad = Math.floor(Math.random() * 10) + 1; // Capacidad aleatoria entre 1 y 10
+    const randomDistancia = Math.floor(Math.random() * 20) + 1; // Distancia aleatoria entre 1 y 20
+
+    const producto = {
+        titulo: `Casa ${i}`,
+        imagen: `https://picsum.photos/800/600?random=${i}`,
+        direccion: `Dirección ${i}`,
+        capacidad: `${randomCapacidad}`,
+        distancia: `${randomDistancia}`,
+        detalles: `Detalles de la Casa ${i}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
+    };
+
+    productos.push(producto);
+}
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const inputCapacidad = document.querySelector("#inputCapacidad");
@@ -39,12 +54,16 @@ function cargarProductos(productosElegidos) {
             </div>
             <div class="arrow">
                 <a href="${producto.informacion}"><i class="fa-solid fa-circle-arrow-right"></i></a>
-            </div>
+            </div> 
         </div>
         `;
         contenedorProductos.append(div);
     });
 }
+
+inputCapacidad.addEventListener("input", function() {
+    buscarPorCapacidad();
+});
 
 function buscarPorCapacidad() {
     const valorBuscado = inputCapacidad.value.toLowerCase();
