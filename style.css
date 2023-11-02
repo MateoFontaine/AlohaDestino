@@ -79,7 +79,7 @@ footer .navegador{
 }
 .producto{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     padding: .5rem;
@@ -91,6 +91,7 @@ footer .navegador{
 }
 .producto-txt{
     display: flex;
+    position: relative;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -102,7 +103,6 @@ footer .navegador{
 }
 .producto img{
     width: 12rem;
-    margin-right: rem;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15)2.9px 0px 3px ;
 }
@@ -130,10 +130,40 @@ footer .navegador{
 }
 
 /* Casas */
-
 .imagenes{
     padding: 1.3rem 1.3rem;
 }
 .imagenes img{
     border-radius: 10px;
+}
+.casasInformacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.iconos-data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.iconos-data iframe{
+    box-shadow: rgba(0, 0, 0, 0.15)2.9px 0px 3px ;
+}
+.iconos-izq{
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-der{
+    display: flex;
+    justify-content: space-evenly;
+}
+.data-icon{
+    display:
+}
+.iconos-data i{
+    color: gray !important;
+    font-size: 1.3rem;
+    margin: .3rem .3rem;
+    
 }

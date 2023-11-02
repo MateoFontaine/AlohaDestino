@@ -1,8 +1,8 @@
 const productos = [
     {
         titulo: "Casa 1",
-        imagen: "assets/img/casa-1.jpg",
-        direccion: "San martin 268",
+        imagen: "https://picsum.photos/800/600?random=34",
+        direccion: "Direccion 0",
         capacidad: "3",
         distancia: "12",
         informacion: "assets/casas/casa-01.html"
@@ -103,3 +103,4 @@ document.addEventListener("DOMContentLoaded", function() {
         contenedorProductos.style.display = "block";
     }, 500); // Cambia el valor (en milisegundos) a la cantidad de tiempo que deseas mostrar la pantalla inicial
 });
+
