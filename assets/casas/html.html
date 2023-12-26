@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-ver-mas {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.info-adicional {
+  padding: 10px;
+  display: none;
+}
+
+.expandido .info-adicional {
+  display: block;
+}
+
+    </style>
+    <title>Tu Página</title>
+</head>
+<body>
+
+<div class="card">
+  <img src="imagen-casa.jpg" alt="Casa">
+  <button class="btn-ver-mas">Ver más</button>
+  <div class="info-adicional">
+    <p>Información adicional sobre la casa...</p>
+    <p>Detalles, características, etc.</p>
+  </div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const btnVerMas = card.querySelector('.btn-ver-mas');
+
+    btnVerMas.addEventListener('click', () => {
+      card.classList.toggle('expandido');
+    });
+  });
+</script>
+
+</body>
+</html>

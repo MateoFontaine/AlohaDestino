@@ -4,13 +4,13 @@ const productos = [
         imagen: "https://picsum.photos/800/600?random=34",
         direccion: "Direccion 0",
         capacidad: "3",
-        distancia: "12",
+        distancia: "14",
         informacion: "assets/casas/casa-01.html"
     },
 ];
 
 
-for (let i = 1; i <= 500; i++) {
+for (let i = 1; i <= 5; i++) {
     const randomCapacidad = Math.floor(Math.random() * 10) + 1; // Capacidad aleatoria entre 1 y 10
     const randomDistancia = Math.floor(Math.random() * 20) + 1; // Distancia aleatoria entre 1 y 20
 
@@ -103,4 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
         contenedorProductos.style.display = "block";
     }, 500); // Cambia el valor (en milisegundos) a la cantidad de tiempo que deseas mostrar la pantalla inicial
 });
+
+
 
